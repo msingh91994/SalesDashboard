@@ -1,0 +1,27 @@
+.list-container {
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    display: grid;
+    grid-row-gap: 22px;
+}
+.funnel-img {
+    position: relative;
+}
+
+.funnel-item {
+    text-align: center;
+}
+.title-styl {
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+.title-styl:last-child {
+    font-size: 48px;
+}
+.value-styl {
+    color: white;
+    font-size: 48px;
+    font-family: "Roboto";
+}

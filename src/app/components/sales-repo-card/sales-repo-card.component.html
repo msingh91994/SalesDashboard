@@ -1,0 +1,12 @@
+<mat-card class="example-card">
+    <div  class="bg-style">
+            <mat-card-title class="title-styl">{{data.title}}</mat-card-title>
+        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <mat-card-content>
+            <div *ngFor="let item of gridData" class="grid-align">
+                <span>{{item.key}}</span>
+                <span class="value-styl">{{item.value}}</span>
+            </div>
+        </mat-card-content>
+    </div>
+</mat-card>

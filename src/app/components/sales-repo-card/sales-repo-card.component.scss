@@ -1,0 +1,38 @@
+.example-card {
+    max-width: 400px;
+    
+}
+.grid-align {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    align-items: center;
+}
+.bg-style {
+    background-image: url("../../../assets/images/winner.png");
+    background-color: #1976d3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+.bg-style:nth-child(2){
+    background-color: #2196f3;
+}
+.bg-style:nth-child(3){
+    background-color: #64b5f6;
+}
+.title-styl{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 18px;
+}
+.value-styl{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+

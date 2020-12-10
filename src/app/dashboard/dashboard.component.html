@@ -1,0 +1,70 @@
+<div class="background-styl">
+    <mat-tab-group mat-align-tabs="start">
+        <mat-tab label="First">
+            <section class="dash-container">
+                <div class="w-70">
+                    <div class="drop-styl">
+                        <mat-form-field appearance="fill">
+                            <mat-label>All Sales Raps</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">Option 1</mat-option>
+                                <mat-option value="option2">Option 2 (disabled)</mat-option>
+                                <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="dash-container ">
+                        <sales-repo class="margin-auto"></sales-repo>
+                        <div>
+
+                            <sales-repo-dials *ngFor="let item of list" [data]="item"></sales-repo-dials>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <mat-tab-group mat-align-tabs="start">
+                        <mat-tab label="Top">
+                            <sales-repo-card *ngFor="let item of topList" [data]="item"></sales-repo-card>
+                        </mat-tab>
+                        <mat-tab label="Bottom">
+                            <sales-repo-card *ngFor="let item of topList" [data]="item"></sales-repo-card>
+                        </mat-tab>
+                    </mat-tab-group>
+                </div>
+            </section>
+
+
+        </mat-tab>
+        <mat-tab label="Second">Content 2</mat-tab>
+        <mat-tab label="Third">Content 3</mat-tab>
+    </mat-tab-group>
+</div>
+
+    <div>
+        <div class="grid-10">
+            <div>Sales Rep</div>
+            <div>Date</div>
+            <div>Client</div>
+            <div>Primary Contact Person</div>
+            <div>Title</div>
+            <div>Virtical</div>
+            <div>Meeting Location</div>
+            <div>Purpose of intraction</div>
+            <div>Outcomes & Remarks</div>
+            <div>Engagment Status</div>
+        </div>
+        <div class="grid-10" *ngFor="let item of tableData;let i = index">
+            <div class="font12px">{{item.name}}</div>
+            <div class="font12px">{{item.date}}</div>
+            <div class="font12px">{{item.clientName}}</div>
+            <div class="font12px">{{item.contactPerson}}</div>
+            <div class="font12px">{{item.mettingTitle}}</div>
+            <div class="font12px">{{item.vertical}}</div>
+            <div class="font12px">{{item.location}}</div>
+            <div class="font12px">{{item.meetingPurpose}}</div>
+            <div class="font12px">{{item.remark}}</div>
+            <div class="font12px">{{item.status}}</div>
+
+        </div>
+    </div>
